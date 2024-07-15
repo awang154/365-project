@@ -1,7 +1,9 @@
 
 public class employee {
     private int emplid;
-    public employee(int id) {
-        this.emplid = id;
+    private String name;
+    public employee(int i, String n) {
+        this.emplid = i;
+        this.name = n;
     }
 }
