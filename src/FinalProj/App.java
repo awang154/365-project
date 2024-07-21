@@ -1,4 +1,4 @@
-package FinalProj.classes;
+package FinalProj;
 
 public class App {
     public static void main(String[] args) throws Exception {

@@ -1,28 +1,28 @@
 package FinalProj.classes;
 
 public class EmployeeType {
-    private int tID;
+    private int etID;
     private String tName;
 
-    public EmployeeType(int tID, String tName){
-        this.tID = tID;
+    public EmployeeType(int etID, String tName){
+        this.etID = etID;
         this.tName = tName;
     }
 
     // return statements
-    public int gettid(){
-        return tID;
+    public int getetID(){
+        return etID;
     }
 
-    public void setTypeId(int tid){
-        this.tID = tid;
+    public void setetID(int etID){
+        this.etID = etID;
     }
 
-    public String get_tName(){
+    public String gettName(){
         return tName;
     }
 
-    public void set_tName(String tName){
+    public void settName(String tName){
         this.tName = tName;
     }
 }

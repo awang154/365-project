@@ -1,16 +1,18 @@
 package FinalProj.classes;
 
-// employee class
-public class Employee {
+public class Employee{
     private int empID;
     private String firstName;
     private String lastName;
+    private String phoneNumber;
     private int empType;
 
-    public Employee(int empID, String firstName, String lastName, int empType){
+    // employee info
+    public Employee(int empID, String firstName, String lastName, String phoneNumber, int empType){
         this.empID = empID;
         this.firstName = firstName;
         this.lastName = lastName;
+        this.phoneNumber = phoneNumber;
         this.empType = empType;
     }
 
@@ -39,11 +41,19 @@ public class Employee {
         this.lastName = lastName;
     }
 
-    public int getempType(){
+    public String getPhoneNumber(){
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber){
+        this.phoneNumber = phoneNumber;
+    }
+
+    public int getEmpType(){
         return empType;
     }
 
-    public void setempType(int empType){
+    public void setEmpType(int empType){
         this.empType = empType;
     }
 }
