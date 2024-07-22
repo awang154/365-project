@@ -3,9 +3,9 @@ package FinalProj;
 import java.sql.*;
 
 public class DatabaseConnection {
-    private static final String URL = "jdbc:mysql://ambari-node5.csc.calpoly.edu/rnguye65"; 
-    private static final String USER = "rnguye65"; 
-    private static final String PASS = "026379606";
+    private static final String URL = "jdbc:mysql://ambari-node5.csc.calpoly.edu/employeedatabase"; 
+    private static final String USER = "employeedatabase"; 
+    private static final String PASS = "Trancers5";
 
     public static Connection connect(){
         Connection connect = null;
@@ -15,14 +15,18 @@ public class DatabaseConnection {
             System.out.println("Connection success.");
         }
         catch(ClassNotFoundException e){
-            System.out.println("class not found");
+            System.out.println("Could not load JDBC driver");
+            System.out.println("Exception: " + e);
             e.printStackTrace();
         }
-        catch(SQLException e){
-            while(e != null){
-                System.out.println("sql exception");
-                e.printStackTrace();
-                e = e.getNextException();
+        catch(SQLException ex){
+            System.err.println("SQLException information");
+            while(ex != null){
+                System.err.println ("Error msg: " + ex.getMessage());
+                System.err.println ("SQLSTATE: " + ex.getSQLState());
+                System.err.println ("Error code: " + ex.getErrorCode());
+                ex.printStackTrace();
+                ex = ex.getNextException();
             }
         }
         return connect;
