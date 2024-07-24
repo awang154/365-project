@@ -1,6 +1,11 @@
 package FinalProj.classes;
 
 public class Employee{
+    public enum level {
+        management,
+        employee
+    }
+
     private int empID;
     private String firstName;
     private String lastName;
