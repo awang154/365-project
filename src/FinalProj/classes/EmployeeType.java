@@ -4,6 +4,7 @@ public class EmployeeType {
     private int etID;
     private String tName;
 
+    // employee type info
     public EmployeeType(int etID, String tName){
         this.etID = etID;
         this.tName = tName;

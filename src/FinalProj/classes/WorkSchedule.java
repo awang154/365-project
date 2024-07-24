@@ -1,10 +1,11 @@
 package FinalProj.classes;
 
-public class WorkSchedule {
+public class WorkSchedule{
     private int schedID;
     private String date;
     private int empID;
 
+    // work schedule info
     public WorkSchedule(int schedID, String date, int empID){
         this.schedID = schedID;
         this.date = date;

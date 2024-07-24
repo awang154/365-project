@@ -5,6 +5,7 @@ public class HoursWorked {
     private String date;
     private double hrsWorked;
 
+    // hours worked info
     public HoursWorked(int empID, String date, double hrsWorked){
         this.empID = empID;
         this.date = date;
