@@ -10,7 +10,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.scene.layout.Pane;
 
-public class check {
+public class LoginController {
     @FXML
     private TextField usernameField;
 
@@ -24,7 +24,7 @@ public class check {
 
         try {
             if ("admin".equals(username) && "admin".equals(password)) {
-                loadPage("admin.fxml", "Admin Page");
+                loadPage("management.fxml", "Management Page");
             } else if ("employee".equals(username) && "employee".equals(password)) {
                 loadPage("employee.fxml", "Employee Page");
             } else {
@@ -38,7 +38,8 @@ public class check {
 
     private void loadPage(String fxmlFile, String title) throws Exception {
         Stage stage = (Stage) usernameField.getScene().getWindow();
-        Pane root = FXMLLoader.load(getClass().getResource(fxmlFile));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource(fxmlFile));
+        Pane root = loader.load();
         Scene scene = new Scene(root);
         stage.setTitle(title);
         stage.setScene(scene);

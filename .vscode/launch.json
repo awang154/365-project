@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "FinalProj.access.Main",
+      "projectName": "project_1bbf2878"
+    },
+    {
+      "type": "java",
       "name": "login",
       "request": "launch",
       "mainClass": "FinalProj.access.login",
