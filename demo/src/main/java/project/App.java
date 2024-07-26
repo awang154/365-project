@@ -12,7 +12,7 @@ public class App extends Application {
     public void start(Stage primaryStage) {
         try {
             // Load the FXML file
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/project/login.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/project/employee.fxml"));
             VBox root = loader.load();
 
             // Set the scene with the loaded FXML
