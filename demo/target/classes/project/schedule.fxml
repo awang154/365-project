@@ -156,6 +156,7 @@
             <Button fx:id="backSched" layoutX="528.0" layoutY="295.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
             <Button fx:id="register" layoutX="588.0" layoutY="295.0" mnemonicParsing="false" onAction="#reg" text="Register" />
             <TextField fx:id="ename" layoutX="499.0" layoutY="258.0" promptText="Name" />
+            <TextField fx:id="date" layoutX="350.0" layoutY="258.0" promptText="Ex: monMorn" />
       </children>
     </AnchorPane>
   </children>
