@@ -1,8 +1,14 @@
 main\DatabaseConnection.class
+main\TestDatabaseInserts.class
+main\adminControl.class
+main\WorkSchedule.class
 main\Employee.class
 main\App.class
+main\HoursWorkedAccess.class
+main\WorkScheduleAccess.class
+main\emplControl.class
 main\EmployeeAccess.class
+main\loginControl.class
 main\EmployeeType.class
 main\HoursWorked.class
 main\EmployeeTypeAccess.class
-main\WorkSchedule.class
