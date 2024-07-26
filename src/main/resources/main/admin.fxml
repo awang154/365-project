@@ -84,8 +84,9 @@
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
          <children>
             <Button fx:id="back" layoutX="586.0" layoutY="346.0" mnemonicParsing="false" text="Back" onAction="#adminBack"/>
-            <Button fx:id="showAll" layoutX="293.0" layoutY="123.0" mnemonicParsing="false" text="Show all" />
-            <Button fx:id="schedule" layoutX="293.0" layoutY="149.0" mnemonicParsing="false" text="Schedule" />
+            <!-- <Button fx:id="showAll" layoutX="293.0" layoutY="123.0" mnemonicParsing="false" text="Show all" onAction="#showAll"/> -->
+            <Button fx:id="create" layoutX="293.0" layoutY="123.0" mnemonicParsing="false" text="Create" onAction = "#ecreate"/>
+            <Button fx:id="schedule" layoutX="293.0" layoutY="149.0" mnemonicParsing="false" text="Schedule" onAction="#goSchedule"/>
          </children>
     </AnchorPane>
   </children>

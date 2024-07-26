@@ -13,20 +13,24 @@ public class loginControl {
     @FXML
     private TextField passLogin;
 
-    private final String adminPass = "admin";
-    private final String emplPass = "employee";
-    private final String emplUser = "employee";
-    private final String adminUser = "admin";
+    public static Boolean admin = true;
+    private String adminPass = "admin";
+    private String emplPass = "e";
+    // private String emplUser = "e";
+    private String adminUser = "admin";
 
     @FXML
     private void checkLogin() throws IOException {
         String username = userLogin.getText();
         String password = passLogin.getText();
-        if (username.equals(adminUser) && password.equals(adminPass)) {
+        if (username.equals(adminUser) && password.equals(adminPass)){
             App.setRoot("admin");
-        } else if (username.equals(emplUser) && password.equals(emplPass)) {
+        }
+        else if (password.equals(emplPass)) {
+            admin = false;
             App.setRoot("employee");
-        } else {
+        }
+        else {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Login Error");
             alert.setHeaderText(null);
@@ -34,4 +38,5 @@ public class loginControl {
             alert.showAndWait();
         }
     }
+ 
 }
