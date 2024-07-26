@@ -21,7 +21,7 @@ public class adminControl {
 
     @FXML
     private void showAll() throws IOException {
-        demoApp.setRoot("showAll");
+        // demoApp.setRoot("showAll");
     }
  
 }
