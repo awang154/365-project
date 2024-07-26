@@ -21,7 +21,7 @@ public class emplControl {
 
     @FXML
     private void emplHours() throws IOException {
-        // demoApp.setRoot();
+        demoApp.setRoot("hours");
     }
 
     @FXML

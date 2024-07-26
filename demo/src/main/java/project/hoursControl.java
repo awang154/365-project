@@ -1,9 +1,9 @@
 package project;
 
 import java.io.IOException;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+// import java.sql.Connection;
+// import java.sql.PreparedStatement;
+// import java.sql.SQLException;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
@@ -26,7 +26,7 @@ public class hoursControl {
     @FXML
     private void input() {
         String hoursWorked = "INSERT INTO HoursWorked(name, date, hours_worked) values (?, ?, ?)";
-
+        /* 
         try (Connection conn = DatabaseConnection.connect();
                 PreparedStatement statement = conn.prepareStatement(insertStatement)) {
             statement.setString(1, name.getText());
@@ -38,7 +38,7 @@ public class hoursControl {
         } catch (SQLException ex) {
             System.out.println(ex.getMessage());
         }
-
+        */
         name.setText("");
         date.setText("");
         hours.setText("");
