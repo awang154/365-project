@@ -41,7 +41,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.hoursControl">
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
   <children>
     <MenuBar VBox.vgrow="NEVER">
       <menus>
@@ -87,7 +87,8 @@
             <TextField fx:id="name" layoutY="2.0" promptText="Name" />
             <TextField fx:id="date" layoutY="27.0" promptText="Date" />
             <TextField fx:id="hours" layoutY="52.0" promptText="Hours" />
-            <Button fx:id="input" layoutX="105.0" layoutY="77.0" mnemonicParsing="false" text="Input" onAction="#input"/>
+            <Button fx:id="input" layoutX="105.0" layoutY="77.0" mnemonicParsing="false" onAction="#input" text="Input" />
+            <Button layoutY="77.0" mnemonicParsing="false" onAction="#back" text="Back" />
          </children>
     </AnchorPane>
   </children>

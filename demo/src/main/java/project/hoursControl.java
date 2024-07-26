@@ -43,4 +43,9 @@ public class hoursControl {
         date.setText("");
         hours.setText("");
     }
+
+    @FXML
+    private void back() {
+        demoApp.setRoot("employee");
+    }
 }
