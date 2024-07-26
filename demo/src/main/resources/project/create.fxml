@@ -5,13 +5,14 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox prefHeight="400.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.CreateEmployeeController">
+<VBox prefHeight="400.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.createControl">
     <children>
-        <Label text="Create Employee" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
-        <TextField fx:id="firstNameField" promptText="First Name"/>
-        <TextField fx:id="lastNameField" promptText="Last Name"/>
-        <TextField fx:id="phoneNumberField" promptText="Phone Number"/>
-        <TextField fx:id="employeeTypeField" promptText="Employee Type (ID)"/>
-        <Button text="Create" onAction="#createEmployee"/>
+        <Label style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Create Employee" />
+        <TextField fx:id="firstNameField" promptText="First Name" />
+        <TextField fx:id="lastNameField" promptText="Last Name" />
+        <TextField fx:id="phoneNumberField" promptText="Phone Number" />
+        <TextField fx:id="employeeTypeField" promptText="Employee Type (ID)" />
+        <Button onAction="#createEmployee" text="Create" />
+      <Button mnemonicParsing="false" onAction="#back" text="Back" />
     </children>
 </VBox>

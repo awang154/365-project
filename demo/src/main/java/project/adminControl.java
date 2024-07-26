@@ -18,5 +18,10 @@ public class adminControl {
     private void goSchedule() throws IOException {
         demoApp.setRoot("schedule");
     }
+
+    @FXML
+    private void showAll() throws IOException {
+        demoApp.setRoot("showAll");
+    }
  
 }

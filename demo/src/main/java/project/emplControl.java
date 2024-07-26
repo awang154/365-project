@@ -23,5 +23,10 @@ public class emplControl {
     private void emplHours() throws IOException {
         // demoApp.setRoot();
     }
+
+    @FXML
+    private void ecreate() throws IOException {
+        demoApp.setRoot("create");
+    }
  
 }

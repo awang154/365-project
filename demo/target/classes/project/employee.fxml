@@ -57,7 +57,7 @@
                 <Button fx:id="emplBack" mnemonicParsing="false" text="Back" onAction="#emplBack"/>
               </buttons>
             </ButtonBar>
-            <Button fx:id="create" layoutX="293.0" layoutY="148.0" mnemonicParsing="false" text="Create" />
+            <Button fx:id="create" layoutX="293.0" layoutY="148.0" mnemonicParsing="false" text="Create" onAction = "#ecreate"/>
             <Button fx:id="emplyHours" layoutX="293.0" layoutY="174.0" mnemonicParsing="false" text="Hours" onAction="#emplHours"/>
             <Button fx:id="schedule" layoutX="293.0" layoutY="200.0" mnemonicParsing="false" text="Schedule"  onAction="#goSchedule"/>
       </children>

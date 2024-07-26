@@ -15,10 +15,10 @@ public class loginControl {
     private TextField passLogin;
 
     public static Boolean admin = true;
-    private String adminPass = "admin";
-    private String emplPass = "employee";
+    private String adminPass = "a";
+    private String emplPass = "e";
     // private String emplUser = "employee";
-    private String adminUser = "admin";
+    private String adminUser = "a";
 
     @FXML
     private void checkLogin() throws IOException {
