@@ -36,13 +36,12 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.SeparatorMenuItem?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.loginControl">
   <children>
     <MenuBar VBox.vgrow="NEVER">
       <menus>
@@ -84,11 +83,11 @@
       </menus>
     </MenuBar>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
-      <children>
-            <TextField fx:id="user" layoutX="240.0" layoutY="148.0" promptText="username" />
-            <Button layoutX="356.0" layoutY="200.0" mnemonicParsing="false" onAction="#loginCheck" text="login" />
-            <PasswordField fx:id="pass" layoutX="240.0" layoutY="176.0" promptText="password" />
-      </children>
+         <children>
+            <TextField fx:id="userLogin" layoutX="246.0" layoutY="163.0" promptText="username" />
+            <TextField fx:id="passLogin" layoutX="246.0" layoutY="188.0" promptText="password" />
+            <Button fx:id="loginButton" layoutX="352.0" layoutY="213.0" mnemonicParsing="false" text="login" onAction="#checkLogin"/>
+         </children>
     </AnchorPane>
   </children>
 </VBox>

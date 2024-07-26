@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.emplControl">
   <children>
     <MenuBar VBox.vgrow="NEVER">
       <menus>
@@ -54,7 +54,7 @@
       <children>
             <ButtonBar layoutX="560.0" layoutY="333.0" prefHeight="40.0" prefWidth="80.0">
               <buttons>
-                <Button fx:id="goBack" mnemonicParsing="false" text="Back" />
+                <Button fx:id="emplBack" mnemonicParsing="false" text="Back" onAction="#emplBack"/>
               </buttons>
             </ButtonBar>
             <Button fx:id="create" layoutX="293.0" layoutY="148.0" mnemonicParsing="false" text="Create" />

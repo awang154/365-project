@@ -40,7 +40,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.adminControl">
   <children>
     <MenuBar VBox.vgrow="NEVER">
       <menus>
@@ -83,7 +83,7 @@
     </MenuBar>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
          <children>
-            <Button fx:id="back" layoutX="586.0" layoutY="346.0" mnemonicParsing="false" text="Back" />
+            <Button fx:id="back" layoutX="586.0" layoutY="346.0" mnemonicParsing="false" text="Back" onAction="#adminBack"/>
             <Button fx:id="showAll" layoutX="293.0" layoutY="123.0" mnemonicParsing="false" text="Show all" />
             <Button fx:id="schedule" layoutX="293.0" layoutY="149.0" mnemonicParsing="false" text="Schedule" />
          </children>
