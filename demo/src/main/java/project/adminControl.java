@@ -13,5 +13,10 @@ public class adminControl {
     private void adminBack() throws IOException {
         demoApp.setRoot("login");
     }
+
+    @FXML
+    private void goSchedule() throws IOException {
+        demoApp.setRoot("schedule");
+    }
  
 }

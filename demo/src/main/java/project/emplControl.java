@@ -13,5 +13,15 @@ public class emplControl {
     private void emplBack() throws IOException {
         demoApp.setRoot("login");
     }
+
+    @FXML
+    private void goSchedule() throws IOException {
+        demoApp.setRoot("schedule");
+    }
+
+    @FXML
+    private void emplHours() throws IOException {
+        // demoApp.setRoot();
+    }
  
 }

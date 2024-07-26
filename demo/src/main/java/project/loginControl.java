@@ -14,9 +14,10 @@ public class loginControl {
     @FXML
     private TextField passLogin;
 
+    public static Boolean admin = true;
     private String adminPass = "admin";
     private String emplPass = "employee";
-    private String emplUser = "employee";
+    // private String emplUser = "employee";
     private String adminUser = "admin";
 
     @FXML
@@ -26,7 +27,8 @@ public class loginControl {
         if (username.equals(adminUser) && password.equals(adminPass)){
             demoApp.setRoot("admin");
         }
-        else if (username.equals(emplUser) && password.equals(emplPass)) {
+        else if (password.equals(emplPass)) {
+            admin = false;
             demoApp.setRoot("employee");
         }
         else {
